@@ -22,7 +22,6 @@ for i in range(n):
 dem = 0
 print("Danh sach sinh vien hoc lai")
 for i in ds:
-    # if (i.diemToan < 4 and i.diemTriet < 4) or (i.diemToan < 4 and i.diemLTC < 4) or (i.diemTriet < 4 and i.diemLTC <4):
     if sum(1 for diem in [i.diemToan, i.diemTriet, i.diemLTC] if diem < 4) >= 2:
         i.xuat()
         dem += 1
